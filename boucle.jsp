@@ -130,4 +130,27 @@ public class cinq {
         }
     }
 }
+exo 7:
+package exo1;
+
+import java.util.Scanner;
+
+public class sept {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Entrez un nombre pour afficher sa table de multiplication : ");
+        int nombre = scanner.nextInt();
+        
+        afficherTableMultiplication(nombre);
+    }
+    
+    public static void afficherTableMultiplication(int nombre) {
+        System.out.println("Table de multiplication pour " + nombre + " :");
+        
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(nombre + " x " + i + " = " + (nombre * i));
+        }
+    }
+}
 
